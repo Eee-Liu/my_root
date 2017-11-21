@@ -1,0 +1,91 @@
+[
+  {
+    "enumType": "RoleType",
+    "iconList": [
+      {
+        "typeCode": 0,
+        "typeSign": "user",
+        "typeContent": "业主",
+        "defaultIcon": "owner.jpg",
+        "maleIcon": "owner.jpg",
+        "femaleIcon": "owner.jpg",
+        "jgMaleId": "",
+        "jgFemaleId": ""
+      },
+      {
+        "typeCode": 1,
+        "typeSign": "team",
+        "typeContent": "施工队长",
+        "defaultIcon": "team.jpg",
+        "maleIcon": "team.jpg",
+        "femaleIcon": "team.jpg",
+        "jgMaleId": "",
+        "jgFemaleId": ""
+      },
+      {
+        "typeCode": 2,
+        "typeSign": "admin",
+        "typeContent": "监理",
+        "defaultIcon": "admin.jpg",
+        "maleIcon": "admin.jpg",
+        "femaleIcon": "admin.jpg",
+        "jgMaleId": "",
+        "jgFemaleId": ""
+      },
+      {
+        "typeCode": 3,
+        "typeSign": "designer",
+        "typeContent": "设计师",
+        "defaultIcon": "designer.jpg",
+        "maleIcon": "designer.jpg",
+        "femaleIcon": "designer.jpg",
+        "jgMaleId": "",
+        "jgFemaleId": ""
+      },
+      {
+        "typeCode": 4,
+        "typeSign": "manager",
+        "typeContent": "客户经理",
+        "defaultIcon": "manager.jpg",
+        "maleIcon": "manager.jpg",
+        "femaleIcon": "manager.jpg",
+        "jgMaleId": "",
+        "jgFemaleId": ""
+      }
+    ]
+  },
+  {
+    "enumType": "OrderSourceType",
+    "iconList":[
+      {
+        "typeCode": 1001,
+        "typeSign": "",
+        "typeContent": "天猫",
+        "defaultIcon": "tmall_icon.png"
+      },
+      {
+        "typeCode": 1006,
+        "typeSign": "",
+        "typeContent": "线下",
+        "defaultIcon": "store_icon.png"
+      },
+      {
+        "typeCode": 1007,
+        "typeSign": "",
+        "typeContent": "APP",
+        "defaultIcon": "bnq_icon.png"
+      }
+    ]
+  },
+  {
+    "enumType": "DefaultIconType",
+    "iconList":[
+      {
+        "typeCode": 1,
+        "typeSign": "",
+        "typeContent": "默认装修展示图片",
+        "defaultIcon": "default_deco.jpg"
+      }
+    ]
+  }
+]

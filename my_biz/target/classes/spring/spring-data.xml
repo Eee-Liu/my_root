@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="org.apache.commons.dbcp2.BasicDataSource" id="dataSource">
+        <property name="driverClassName" value="${root.jdbc.driverClassName}"/>
+        <property name="url" value="${root.jdbc.url}"/>
+        <property name="username" value="${root.jdbc.userName}"/>
+        <property name="password" value="${root.jdbc.passWord}"/>
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+        <!--<property name="url" value="jdbc:mysql://192.168.1.57:3306/bnqs2b"/>-->
+        <!--<property name="username" value="root"/>-->
+        <!--<property name="password" value="Wki7rj#1"/>-->
+    </bean>
+
+    <!-- 生成SqlSessionFactory 从而获得sqlSession 对数据库操作-->
+    <bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!-- mybatis的全局配置文件 包括是否开启缓存,别名-->
+        <property name="configLocation" value="classpath:db/mybatis-config.xml"/>
+        <!-- 当mybatis的xml文件和mapper接口不在相同包下时，需要用mapperLocations属性指定xml文件的路径。
+         *是个通配符，代表所有的文件，**代表所有目录下
+         如果Mapper.xml与Mapper.class在同一个包下且同名，spring扫描Mapper.class的同时会自动扫描同名的Mapper.xml并装配到Mapper.class。
+         如果Mapper.xml与Mapper.class不在同一个包下或者不同名，就必须使用配置mapperLocations指定mapper.xml的位置。
+         此时spring是通过识别mapper.xml中的 <mapper namespace="com.fan.mapper.UserDao"> namespace的值来确定对应的Mapper.class的。-->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+    </bean>
+
+    <!--扫描包声明哪些接口需要生成代理类,并映射到xml文件-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="cn.ly.app.biz.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="SqlSessionFactory"/>
+    </bean>
+</beans>

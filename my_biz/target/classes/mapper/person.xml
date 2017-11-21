@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="cn.ly.app.biz.dao.auth.PersonDao">
+
+
+	<resultMap id="personResult" type="cn.ly.app.biz.domain.dobj.auth.PersonDO">
+		<result column="id" property="id"/>
+		<result column="creator_id" property="creatorId"/>
+		<result column="updater_id" property="updaterId"/>
+		<result column="create_time" property="createTime"/>
+		<result column="update_time" property="updateTime"/>
+		<result column="is_delete" property="isDelete"/>
+		<result column="account" property="account"/>
+		<result column="phone" property="phone"/>
+		<result column="pwd" property="pwd"/>
+		<result column="can_login" property="canLogin"/>
+		<result column="is_admin" property="isAdmin"/>
+		<result column="super_pid" property="superPid"/>
+		<result column="name" property="name"/>
+		<result column="email" property="email"/>
+		<result column="head_pic" property="headPic"/>
+		<result column="to_cus_plus" property="toCusPlus"/>
+		<result column="bus_subbus_plus" property="busSubbusPlus"/>
+		<result column="bus_subbus_com" property="busSubbusCom"/>
+		<result column="address" property="address"/>
+		<result column="logistic" property="logistic"/>
+		<result column="contract_start_time" property="contractStartTime"/>
+		<result column="contract_end_time" property="contractEndTime"/>
+		<result column="sap_no" property="sapNo"/>
+		<result column="ecard_no" property="ecardNo"/>
+		<result column="nick_name" property="nickName"/>
+		<result column="remark" property="remark"/>
+		<result column="company" property="company"/>
+		<result column="excel_no" property="excelNo"/>
+		<result column="system_type" property="systemType"/>
+	</resultMap>
+
+
+	<sql id="selectColumnList">
+		id
+		,creator_id
+		,updater_id
+		,create_time
+		,update_time
+		,is_delete
+		,account
+		,phone
+		,pwd
+		,can_login
+		,is_admin
+		,super_pid
+		,name
+		,email
+		,head_pic
+		,to_cus_plus
+		,bus_subbus_plus
+		,bus_subbus_com
+		,address
+		,logistic
+		,contract_start_time
+		,contract_end_time
+		,sap_no
+		,ecard_no
+		,nick_name
+		,remark
+		,company
+		,excel_no
+		,system_type
+	</sql>
+
+
+	<sql id="queryWhereSql">
+		where is_delete=0
+		<if test="id != null">
+			AND id=#{id}
+		</if>
+		<if test="updaterId != null">
+			AND updater_id=#{updaterId}
+		</if>
+		<if test="updateTime != null">
+			AND update_time=#{updateTime}
+		</if>
+		<if test="isDelete != null">
+			AND is_delete=#{isDelete}
+		</if>
+		<if test="account != null">
+			AND account=#{account}
+		</if>
+		<if test="phone != null">
+			AND phone=#{phone}
+		</if>
+		<if test="pwd != null">
+			AND pwd=#{pwd}
+		</if>
+		<if test="canLogin != null">
+			AND can_login=#{canLogin}
+		</if>
+		<if test="isAdmin != null">
+			AND is_admin=#{isAdmin}
+		</if>
+		<if test="superPid != null">
+			AND super_pid=#{superPid}
+		</if>
+		<if test="name != null">
+			AND name=#{name}
+		</if>
+		<if test="email != null">
+			AND email=#{email}
+		</if>
+		<if test="headPic != null">
+			AND head_pic=#{headPic}
+		</if>
+		<if test="toCusPlus != null">
+			AND to_cus_plus=#{toCusPlus}
+		</if>
+		<if test="busSubbusPlus != null">
+			AND bus_subbus_plus=#{busSubbusPlus}
+		</if>
+		<if test="busSubbusCom != null">
+			AND bus_subbus_com=#{busSubbusCom}
+		</if>
+		<if test="address != null">
+			AND address=#{address}
+		</if>
+		<if test="logistic != null">
+			AND logistic=#{logistic}
+		</if>
+		<if test="contractStartTime != null">
+			AND contract_start_time=#{contractStartTime}
+		</if>
+		<if test="contractEndTime != null">
+			AND contract_end_time=#{contractEndTime}
+		</if>
+		<if test="sapNo != null">
+			AND sap_no=#{sapNo}
+		</if>
+		<if test="ecardNo != null">
+			AND ecard_no=#{ecardNo}
+		</if>
+		<if test="nickName != null">
+			AND nick_name=#{nickName}
+		</if>
+		<if test="remark != null">
+			AND remark=#{remark}
+		</if>
+		<if test="company != null">
+			AND company=#{company}
+		</if>
+		<if test="excelNo != null">
+			AND excel_no=#{excelNo}
+		</if>
+		<if test="systemType != null">
+			AND system_type=#{systemType}
+		</if>
+	</sql>
+
+
+	<insert id="insert" parameterType="cn.ly.app.biz.domain.dobj.auth.PersonDO" useGeneratedKeys="true"
+            keyProperty="id">
+		insert into auth_person (
+		id
+		,creator_id
+		,updater_id
+		,create_time
+		,update_time
+		,is_delete
+		,account
+		,phone
+		,pwd
+		,can_login
+		,is_admin
+		,super_pid
+		,name
+		,email
+		,head_pic
+		,to_cus_plus
+		,bus_subbus_plus
+		,bus_subbus_com
+		,address
+		,logistic
+		,contract_start_time
+		,contract_end_time
+		,sap_no
+		,ecard_no
+		,nick_name
+		,remark
+		,company
+		,excel_no
+		,system_type
+		) values (
+		<![CDATA[
+   #{id}
+	,#{creatorId}
+   ,#{updaterId}
+   ,now()
+   ,now()
+   ,0
+   ,#{account}
+   ,#{phone}
+   ,#{pwd}
+   ,#{canLogin}
+   ,#{isAdmin}
+   ,#{superPid}
+   ,#{name}
+   ,#{email}
+   ,#{headPic}
+   ,#{toCusPlus}
+   ,#{busSubbusPlus}
+   ,#{busSubbusCom}
+   ,#{address}
+   ,#{logistic}
+   ,#{contractStartTime}
+   ,#{contractEndTime}
+   ,#{sapNo}
+   ,#{ecardNo}
+   ,#{nickName}
+   ,#{remark}
+   ,#{company}
+   ,#{excelNo}
+   ,#{systemType}
+]]>
+		);
+	</insert>
+
+
+	<insert id="batchInsert" parameterType="java.util.List">
+		insert into auth_person (
+		creator_id
+		,updater_id
+		,create_time
+		,update_time
+		,is_delete
+		,account
+		,phone
+		,pwd
+		,can_login
+		,is_admin
+		,super_pid
+		,name
+		,email
+		,head_pic
+		,to_cus_plus
+		,bus_subbus_plus
+		,bus_subbus_com
+		,address
+		,logistic
+		,contract_start_time
+		,contract_end_time
+		,sap_no
+		,ecard_no
+		,nick_name
+		,remark
+		,company
+		,excel_no
+		,system_type
+		) values
+		<foreach collection="list" item="item" open=" " separator="," close="">
+			(
+			<![CDATA[
+			#{item.creatorId}
+	,#{item.updaterId}
+	,now()
+	,now()
+	,0
+	,#{item.account}
+	,#{item.phone}
+	,#{item.pwd}
+	,#{item.canLogin}
+	,#{item.isAdmin}
+	,#{item.superPid}
+	,#{item.name}
+	,#{item.email}
+	,#{item.headPic}
+	,#{item.toCusPlus}
+	,#{item.busSubbusPlus}
+	,#{item.busSubbusCom}
+	,#{item.address}
+	,#{item.logistic}
+	,#{item.contractStartTime}
+	,#{item.contractEndTime}
+	,#{item.sapNo}
+	,#{item.ecardNo}
+	,#{item.nickName}
+	,#{item.remark}
+	,#{item.company}
+	,#{item.excelNo}
+	,#{item.systemType}
+		]]>
+			)
+		</foreach>
+	</insert>
+
+
+	<select id="queryById" resultMap="personResult" parameterType="java.lang.Long">
+		select
+		<include refid="selectColumnList"/>
+		from auth_person
+		where id = #{id}
+	</select>
+
+
+	<select id="queryByIds" resultMap="personResult" parameterType="java.lang.Long">
+		select
+		<include refid="selectColumnList"/>
+		from auth_person
+		where
+		id in
+		<foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
+			#{item}
+		</foreach>
+
+	</select>
+
+
+	<select id="query" resultMap="personResult" parameterType="cn.ly.app.biz.domain.query.auth.PersonQuery">
+		select
+		<include refid="selectColumnList"/>
+		from auth_person
+		<include refid="queryWhereSql"/>
+		<if test="isPage">
+			limit #{startIndex}, #{pageSize}
+		</if>
+	</select>
+
+	<select id="count" resultType="int" parameterType="cn.ly.app.biz.domain.query.auth.PersonQuery">
+		select
+		count(id)
+		from auth_person
+		<include refid="queryWhereSql"/>
+	</select>
+
+	<update id="updateById" parameterType="cn.ly.app.biz.domain.dobj.auth.PersonDO">
+		update auth_person
+		set
+		<if test="updaterId != null">
+			updater_id = #{updaterId},
+		</if>
+		<if test="updateTime != null">
+			update_time = #{updateTime},
+		</if>
+		<if test="isDelete != null">
+			is_delete = #{isDelete},
+		</if>
+		<if test="account != null">
+			account = #{account},
+		</if>
+		<if test="phone != null">
+			phone = #{phone},
+		</if>
+		<if test="pwd != null">
+			pwd = #{pwd},
+		</if>
+		<if test="canLogin != null">
+			can_login = #{canLogin},
+		</if>
+		<if test="isAdmin != null">
+			is_admin = #{isAdmin},
+		</if>
+		<if test="superPid != null">
+			super_pid = #{superPid},
+		</if>
+		<if test="name != null">
+			name = #{name},
+		</if>
+		<if test="email != null">
+			email = #{email},
+		</if>
+		<if test="headPic != null">
+			head_pic = #{headPic},
+		</if>
+		<if test="toCusPlus != null">
+			to_cus_plus = #{toCusPlus},
+		</if>
+		<if test="busSubbusPlus != null">
+			bus_subbus_plus = #{busSubbusPlus},
+		</if>
+		<if test="busSubbusCom != null">
+			bus_subbus_com = #{busSubbusCom},
+		</if>
+		<if test="address != null">
+			address = #{address},
+		</if>
+		<if test="logistic != null">
+			logistic = #{logistic},
+		</if>
+		<if test="contractStartTime != null">
+			contract_start_time = #{contractStartTime},
+		</if>
+		<if test="contractEndTime != null">
+			contract_end_time = #{contractEndTime},
+		</if>
+		<if test="sapNo != null">
+			sap_no = #{sapNo},
+		</if>
+		<if test="ecardNo != null">
+			ecard_no = #{ecardNo},
+		</if>
+		<if test="nickName != null">
+			nick_name = #{nickName},
+		</if>
+		<if test="remark != null">
+			remark = #{remark},
+		</if>
+		<if test="company != null">
+			company = #{company},
+		</if>
+		<if test="excelNo != null">
+			excel_no = #{excelNo},
+		</if>
+		<if test="systemType != null">
+			system_type = #{systemType},
+		</if>
+		update_time = now()
+		where id = #{id}
+	</update>
+
+
+	<update id="batchUpdateById" parameterType="java.util.List">
+		<foreach collection="list" item="item" open=" " separator=" " close="">
+			update auth_person
+			set
+			<if test="item.updaterId != null">
+				updater_id = #{item.updaterId},
+			</if>
+			<if test="item.updateTime != null">
+				update_time = #{item.updateTime},
+			</if>
+			<if test="item.isDelete != null">
+				is_delete = #{item.isDelete},
+			</if>
+			<if test="item.account != null">
+				account = #{item.account},
+			</if>
+			<if test="item.phone != null">
+				phone = #{item.phone},
+			</if>
+			<if test="item.pwd != null">
+				pwd = #{item.pwd},
+			</if>
+			<if test="item.canLogin != null">
+				can_login = #{item.canLogin},
+			</if>
+			<if test="item.isAdmin != null">
+				is_admin = #{item.isAdmin},
+			</if>
+			<if test="item.superPid != null">
+				super_pid = #{item.superPid},
+			</if>
+			<if test="item.name != null">
+				name = #{item.name},
+			</if>
+			<if test="item.email != null">
+				email = #{item.email},
+			</if>
+			<if test="item.headPic != null">
+				head_pic = #{item.headPic},
+			</if>
+			<if test="item.toCusPlus != null">
+				to_cus_plus = #{item.toCusPlus},
+			</if>
+			<if test="item.busSubbusPlus != null">
+				bus_subbus_plus = #{item.busSubbusPlus},
+			</if>
+			<if test="item.busSubbusCom != null">
+				bus_subbus_com = #{item.busSubbusCom},
+			</if>
+			<if test="item.address != null">
+				address = #{item.address},
+			</if>
+			<if test="item.logistic != null">
+				logistic = #{item.logistic},
+			</if>
+			<if test="item.contractStartTime != null">
+				contract_start_time = #{item.contractStartTime},
+			</if>
+			<if test="item.contractEndTime != null">
+				contract_end_time = #{item.contractEndTime},
+			</if>
+			<if test="item.sapNo != null">
+				sap_no = #{item.sapNo},
+			</if>
+			<if test="item.ecardNo != null">
+				ecard_no = #{item.ecardNo},
+			</if>
+			<if test="item.nickName != null">
+				nick_name = #{item.nickName},
+			</if>
+			<if test="item.remark != null">
+				remark = #{item.remark},
+			</if>
+			<if test="item.company != null">
+				company = #{item.company},
+			</if>
+			<if test="item.excelNo != null">
+				excel_no = #{item.excelNo},
+			</if>
+			<if test="item.systemType != null">
+				system_type = #{item.systemType},
+			</if>
+			update_time = now()
+			where id = #{item.id};
+		</foreach>
+	</update>
+
+
+	<update id="deleteById" parameterType="java.lang.Long">
+		update auth_person
+		set
+		is_delete=1 ,
+		update_time = now()
+		where id = #{id}
+	</update>
+
+	<update id="deleteByExcelNo" parameterType="java.lang.Long">
+		update auth_person
+		set
+		is_delete=1 ,
+		update_time = now()
+		where excel_no = #{excelNo}
+	</update>
+
+
+</mapper>
