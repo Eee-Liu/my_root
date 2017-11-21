@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+             http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+             http://www.springframework.org/schema/aop
+             http://www.springframework.org/schema/aop/spring-aop.xsd
+             http://www.springframework.org/schema/tx
+			 http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+
+    <!--advice通知 -->
+    <bean id="transaction" class="cn.ly.app.biz.common.MyTransaction"/>
+    <bean id="myAspect" class="cn.ly.app.biz.common.MyAspect"/>
+    <!--切面设置 -->
+    <aop:config>
+    <aop:pointcut id="myCutPoint" expression="execution(* cn.ly.app.biz..*.*(..))"/>
+    <aop:aspect ref="myAspect">
+    <!--<aop:before method="myBefore" pointcut-ref="myCutPoint"/>-->
+    <!--<aop:after-returning method="myAfterReturning" pointcut-ref="myCutPoint" returning="ret"/>-->
+    <!--<aop:after method="myAfter" pointcut-ref="myCutPoint"/>-->
+    <!--<aop:after-throwing method="myAfterThrowing" pointcut-ref="myCutPoint" throwing="e"/>-->
+    <aop:around method="myAround" pointcut-ref="myCutPoint"/>
+    </aop:aspect>
+    </aop:config>
+    <!--开启aspectJ的注解识别-->
+    <aop:aspectj-autoproxy/>
+
+
+</beans>
