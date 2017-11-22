@@ -5,6 +5,9 @@ import cn.ly.app.biz.domain.dobj.auth.PersonDO;
 import cn.ly.app.biz.domain.query.auth.PersonQuery;
 import cn.ly.app.core.utils.CollectionUtil;
 import com.alibaba.fastjson.JSONObject;
+import org.aspectj.weaver.ast.Var;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -18,7 +21,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/common")
 public class HelloAction {
-
+    Logger logger = LoggerFactory.getLogger(HelloAction.class);
     @Autowired
     private PersonAO personAO;
 
@@ -34,6 +37,7 @@ public class HelloAction {
             object.put("account",personDO.getAccount());
             object.put("name",personDO.getName());
         }
+        logger.info("hello slf4j log");
         return object;
     }
 
