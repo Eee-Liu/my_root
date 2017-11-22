@@ -10,15 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a52ba9-fa78-4762-8a28-9298633b8dcd" name="Default" comment="add slf4j">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/lib/jackson-annotations-2.6.0.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_api/target/classes/cn/ly/app/controller/common/HelloAction.class" afterPath="$PROJECT_DIR$/my_api/target/classes/cn/ly/app/controller/common/HelloAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/classes/cn/ly/app/controller/common/HelloAction.class" afterPath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/classes/cn/ly/app/controller/common/HelloAction.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/admin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/bnq_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/default_deco.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/designer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/excel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/file_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/manager.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/owner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/store_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/team.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/icon/tmall_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/src/main/webapp/WEB-INF/json/icon_config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/admin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/bnq_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/default_deco.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/designer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/excel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/file_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/manager.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/owner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/store_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/team.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/icon/tmall_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/json/icon_config.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/lib/my_biz-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/lib/my_biz-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/lib/my_core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/my_api/target/my_api/WEB-INF/lib/my_core-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_biz/target/test-classes/auth/PersonTests.class" afterPath="$PROJECT_DIR$/my_biz/target/test-classes/auth/PersonTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_core/target/classes/cn/ly/app/core/lang/BaseQuery$OrderType.class" afterPath="$PROJECT_DIR$/my_core/target/classes/cn/ly/app/core/lang/BaseQuery$OrderType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_biz/target/test-classes/context.properties" afterPath="$PROJECT_DIR$/my_biz/target/test-classes/context.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_biz/target/test-classes/spring-import.xml" afterPath="$PROJECT_DIR$/my_biz/target/test-classes/spring-import.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,7 +65,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="3816">
               <caret line="159" column="35" lean-forward="false" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
               <folding />
             </state>
@@ -56,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/my_api/src/main/resources/log4j.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -65,8 +85,18 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="384">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_api/target/classes/context.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -130,16 +160,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicDataSource.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar!/org/apache/commons/dbcp/BasicDataSource.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11832">
-              <caret line="566" column="20" lean-forward="false" selection-start-line="566" selection-start-column="20" selection-end-line="566" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -314,13 +334,66 @@
               <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_root" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_api" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_api" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_root" type="462c0819:PsiDirectoryNode" />
+              <item name="my_biz" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,7 +698,8 @@
       <workItem from="1511230344983" duration="14920000" />
       <workItem from="1511315160779" duration="1702000" />
       <workItem from="1511331033903" duration="3437000" />
-      <workItem from="1511343027338" duration="598000" />
+      <workItem from="1511343027338" duration="763000" />
+      <workItem from="1511343850365" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore">
       <created>1511262535130</created>
@@ -677,7 +751,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67179000" />
+    <option name="totallyTimeSpent" value="68407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,20 +774,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24347825" sideWeight="0.5021322" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4173774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29565218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24347825" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18603411" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22068231" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4173913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4173913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -725,6 +799,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -749,7 +849,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my_biz/src/main/java/cn/ly/app/biz/domain/dobj/RoleDO2.java" />
     <entry file="file://$PROJECT_DIR$/my_biz/src/main/java/cn/ly/app/biz/domain/common.java" />
     <entry file="file://$PROJECT_DIR$/my_biz/src/test/java/auth/WorkService.java" />
     <entry file="file://$PROJECT_DIR$/my_biz/src/main/java/cn/ly/app/biz/ao/Auth.java" />
@@ -950,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +1096,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="3816">
           <caret line="159" column="35" lean-forward="false" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
           <folding />
         </state>
@@ -1024,15 +1122,23 @@
     <entry file="file://$PROJECT_DIR$/my_api/src/main/resources/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_api/target/classes/context.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="384">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
